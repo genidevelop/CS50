@@ -18,6 +18,7 @@ int main(void)
     {
         cents -= quarters * 25;
     }
+
     // Calculate how many dimes you should give customer. Subtract the value of those dimes from
     // remaining cents.
     int dimes = cents / 10;
@@ -25,6 +26,7 @@ int main(void)
     {
         cents -= dimes * 10;
     }
+
     // Calculate how many nickels you should give customer. Subtract the value of those nickels from
     // remaining cents.
     int nickels = cents / 5;
@@ -32,6 +34,7 @@ int main(void)
     {
         cents -= nickels * 5;
     }
+
     // Calculate how many pennies you should give customer. Subtract the value of those pennies from
     // remaining cents.
     int pennies = 0;
@@ -39,6 +42,7 @@ int main(void)
     {
         pennies = cents;
     }
+    
     // Sum the number of quarters, dimes, nickels and pennies used.
     int coins = quarters + dimes + nickels + pennies;
     // Print that sum.
